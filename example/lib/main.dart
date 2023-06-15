@@ -1,27 +1,3 @@
-# Components
-## How install 
-### Pub Dev
--  В процессе
-### From AltGit
-
- 
-Since the repository is closed, you should do the following
-
-1. run pubspec.yaml
-2. paste the following piece of code and paste your username and password
-``` Dart
-  dependencies:
-    packageA:
-      git:
-        url: https://username:password@altpoint.gitlab.yandexcloud.net/altpoint-services/flutter/components.git
-
-```
-3. run pub get 
-___
-
-## Example
-
-``` dart
 import 'package:flutter/material.dart';
 import 'package:components/components.dart';
 
@@ -152,6 +128,7 @@ class App extends StatelessWidget {
                         ),
                         onPressed: () {},
                         borderRadius: 8.0,
+                        size: 40.0,
                         border: Border.all(color: Colors.purple),
                         child: const Icon(Icons.add),
                       ),
@@ -180,52 +157,3 @@ class App extends StatelessWidget {
     );
   }
 }
-```
-----
-## Square Button
-
-### This class has the following constructors
-
-- color
-- gradient
-- customDecoration
-
-#### Color constructor
-``` dart
-
-SquareButton.color(
-  borderRadius: 10.0,                   
-  color: Colors.green,                  
-  onPressed: () {},                 
-  size: 40.0,                   
-  border: Border.all(),                 
-  child: const Icon(Icons.add),                 
-),
-```
-
-#### Gradient constructor
-``` dart
-
-SquareButton.gradient(
-  gradient: const LinearGradient(
-    colors: [Colors.green, Colors.blue],
-  ),
-  onPressed: () {},
-  borderRadius: 8.0,
-  size: 40.0,
-  border: Border.all(color: Colors.purple),
-  child: const Icon(Icons.add),
-),
-```
-
-#### CustomDecoration constructor
-``` dart
-
-SquareButton.customDecoration(
-  decoration: BoxDecoration(
-      color: Colors.amber,
-      border: Border.all(color: Colors.black)),
-  onPressed: () {},
-  child: const Icon(Icons.add),
-),
-```
