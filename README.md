@@ -8,12 +8,12 @@
 Since the repository is closed, you should do the following
 
 1. run pubspec.yaml
-2. paste the following piece of code and paste your username and password
+2. paste the following piece of code 
 ``` Dart
   dependencies:
     packageA:
       git:
-        url: https://username:password@altpoint.gitlab.yandexcloud.net/altpoint-services/flutter/components.git
+        url: https://github.com/vinnikpuhh/components.git
 
 ```
 3. run pub get 
